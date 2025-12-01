@@ -47,6 +47,8 @@ const ActivityTable = ({ activities }) => {
               <th scope="col" className="px-6 py-3">Vessel Name</th>
               <th scope="col" className="px-6 py-3">IMO</th>
               <th scope="col" className="px-6 py-3">ETA / ETD</th>
+              <th scope="col" className="px-6 py-3">DWT</th>
+              <th scope="col" className="px-6 py-3">GRT</th>
               <th scope="col" className="px-6 py-3">Status</th>
               <th scope="col" className="px-6 py-3">Agent</th>
             </tr>
@@ -57,6 +59,8 @@ const ActivityTable = ({ activities }) => {
                 <td className="px-6 py-4 font-medium">{activity.vesselName}</td>
                 <td className="px-6 py-4 text-text-light-secondary">{activity.imo}</td>
                 <td className="px-6 py-4">{activity.etaEtd}</td>
+                <td className="px-6 py-4 text-text-light-secondary">{activity.dwt}</td>
+                <td className="px-6 py-4 text-text-light-secondary">{activity.grt}</td>
                 <td className="px-6 py-4">
                   <span
                     className={`inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ${
